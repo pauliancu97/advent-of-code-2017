@@ -347,7 +347,8 @@ impl Process {
                         self.main_sender.send(MainMessage::Terminated { id: self.id }).unwrap();
                         return;
                     }
-                    self.instruction_pointer = updated_instruction_pointer as usize;
+                    self.instruction_pointer = updated_instruction_pointer
+                     as usize;
                 }
             }
         }
