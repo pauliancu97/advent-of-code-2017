@@ -12,9 +12,11 @@ mod day_twelve_2016;
 mod day_thirteen_2016;
 mod day_fifteen_2016;
 mod day_sixteen_2016;
+mod day_twenty_2016;
+mod day_twentytwo_2016;
+mod day_twentytwo;
 mod matrix;
 
 fn main() {
-    let answer = day_sixteen_2016::solve_part_one("01111001100111011", 35651584);
-    println!("{}", answer);
+    day_twentytwo::solve_part_two(10000000);
 }
